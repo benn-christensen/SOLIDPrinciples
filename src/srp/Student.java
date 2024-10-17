@@ -5,12 +5,11 @@ import java.util.ArrayList;
 public class Student {
     private String name;
     private String id;
-    private ArrayList<Integer> grades;
+    private final ArrayList<Integer> grades = new ArrayList<>();
 
     public Student(String name, String id) {
         this.name = name;
         this.id = id;
-        this.grades = new ArrayList<>();
     }
 
     public double calculateGradeAverage() {
